@@ -14,6 +14,7 @@ README_CONTENT_CHECK_FOR = [
     'max efficiency polygon'
 ]
 
+
 def test_readme_exists():
     assert os.path.isfile("README.md"), "README.md file missing!"
 
@@ -22,7 +23,7 @@ def test_readme_contents():
     readme = open("README.md", "r")
     readme_words = readme.read().split()
     readme.close()
-    assert len(readme_words) >= 200, "Make your README.md file interesting! Add atleast 200 words"
+    assert len(readme_words) >= 500, "Make your README.md file interesting! Add atleast 500 words"
 
 
 def test_readme_proper_description():
@@ -86,6 +87,7 @@ def test_greaterthan():
 
     assert a.__gt__(b) is False
     assert a.__gt__(c) is NotImplemented
+
 
 def test_repr():
     a = Polygons(5, 20)
