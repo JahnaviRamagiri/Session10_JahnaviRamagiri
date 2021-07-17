@@ -1,6 +1,7 @@
 # Session10_JahnaviRamagiri
 
 ### Objective 1 :
+
 Create a Polygon Class:
 where initializer takes in:
 number of edges/vertices
